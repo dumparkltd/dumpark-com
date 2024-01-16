@@ -172,7 +172,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #fff;
 }
 
 .navbar-default .navbar-brand {
@@ -257,7 +257,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #fff;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -657,15 +657,12 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/dmprk-triangle.png');
+    background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
-    color: #fff;
-}
+section#contact .section-heading {}
 
 section#contact .form-group {
     margin-bottom: 25px;
