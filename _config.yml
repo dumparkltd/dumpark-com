@@ -26,8 +26,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: Germany: Woischin & Franz GbR, Harkortstr. 144, 22765 Hamburg
-  - line: New Zealand: Unfold Data ltd, 12 Milton St., Wellington 6023
+  - line: "Germany: Woischin & Franz GbR, Harkortstr. 144, 22765 Hamburg"
+  - line: "New Zealand: Unfold Data ltd, 12 Milton St., Wellington 6023"
 
 # Build settings
 markdown: kramdown
