@@ -6,24 +6,6 @@ title: dumpark data visualisation & information design
 email: hello@dumpark.com
 description: "Under construction: dumpark data visualisation & information design"
 
-
-# Team names, titles and social links
-people:
-- name: Edith Woischin
-  pic: 1
-  position: Lead Designer
-
-- name: Timo Franz
-  pic: 2
-  position: Lead Developer
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/dumpark
-  - title: github
-    url: http://github.com/dumparkltd
-
 # Postal address (add as many lines as necessary)
 address:
   - line: "Germany: Woischin & Franz GbR, Harkortstr. 144, 22765 Hamburg"
