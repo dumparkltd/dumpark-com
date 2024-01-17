@@ -512,21 +512,3 @@ a.footer-link:hover:active:focus {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-
-::-moz-selection {
-    text-shadow: none;
-    background: #{{ site.data.template.color.primary }};
-}
-
-::selection {
-    text-shadow: none;
-    background: #{{ site.data.template.color.primary }};
-}
-
-img::selection {
-    background: 0 0;
-}
-
-img::-moz-selection {
-    background: 0 0;
-}
