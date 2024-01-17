@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 layout: default
-modal-id: 0
+modal-id: 1
 date: 2024-01-17
 
 ---
