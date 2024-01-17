@@ -8,9 +8,9 @@ date: 2024-01-17
 
 "dumpark information design" is:
 
-Woischin & Franz GbR
-Harkortstr. 144
-22765 Hamburg
+Woischin & Franz GbR <br>
+Harkortstr. 144 <br>
+22765 Hamburg <br>
 Germany
 
 Directors: Edith Woischin, Timo Franz
@@ -24,7 +24,7 @@ https://help.github.com/en/github/site-policy/github-privacy-statement
 
 #### No other information collected
 
-This website does not currently collect any other private information. 
+This website does not currently collect any other private information.
 
 ### Cookie usage
 
