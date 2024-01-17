@@ -243,6 +243,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    min-height: 100vH;
 }
 
 header .intro-text {
@@ -262,6 +263,12 @@ header .intro-text .intro-lead-in {
     font-weight: 700;
 }
 
+header .intro-text p {
+  max-width: 666px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.primary }};
@@ -283,8 +290,12 @@ header .intro-text .intro-heading {
         line-height: 22px;
     }
 
+    header .intro-text p {
+      margin-bottom: 25px;
+    }
+
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
         font-family: {{ site.data.template.font.bold }};
         font-size: 28px;
         line-height: 28px;
@@ -293,32 +304,6 @@ header .intro-text .intro-heading {
 
 section {
     padding: 100px 0;
-}
-
-section h2.section-heading {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 40px;
-}
-
-section h3.section-subheading {
-    margin-bottom: 75px;
-    text-transform: none;
-    font-family: {{ site.data.template.font.primary }};
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-}
-
-@media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
-}
-
-.service-heading {
-    margin: 15px 0;
-    text-transform: none;
 }
 
 #content {
@@ -403,7 +388,7 @@ section h3.section-subheading {
 }
 
 footer {
-    padding: 25px 0;
+    padding: 5px 0 25px;
     background: #000000;
 }
 
