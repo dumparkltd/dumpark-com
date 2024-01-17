@@ -6,13 +6,33 @@ date: 2024-01-17
 
 ---
 
-### Currently no use of cookies
+"dumpark information design" is:
 
-This website does not currently use any cookies. Cookies are small text files that are placed on your computer or mobile phone when you browse websites.
+Woischin & Franz GbR
+Harkortstr. 144
+22765 Hamburg
+Germany
+
+Directors: Edith Woischin, Timo Franz
+
+### Types of private information collected
+
+#### GitHub Pages
+
+This Website is hosted as a GitHub Pages website. GitHub may collect User Personal Information from visitors to this GitHub Pages website, including logs of visitor IP addresses, to comply with legal obligations, and to maintain the security and integrity of this Website and the Service. See the GitHub Privacy Statement for details:
+https://help.github.com/en/github/site-policy/github-privacy-statement
+
+#### No other information collected
+
+This website does not currently collect any other private information. 
+
+### Cookie usage
+
+This website does not use cookies.
 
 ### Updates to this policy
 
-We may update this privacy policy from time-to-time, particularly as technology changes. You can always check this page for the latest version. We may also notify you of changes to our privacy policy by email.
+We may update this privacy policy from time-to-time, particularly as technology changes. You can always check this page for the latest version.
 
 ### Any questions?
 
