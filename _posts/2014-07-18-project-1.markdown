@@ -1,15 +1,19 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: Privacy Policy
 layout: default
-modal-id: 1
-date: 2014-07-18
-img: dreams.png
-thumbnail: dreams-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+modal-id: 0
+date: 2024-01-17
 
 ---
+
+## Currently no use of cookies
+
+This website does not currently use any cookies. Cookies are small text files that are placed on your computer or mobile phone when you browse websites.
+
+## Updates to this policy
+
+We may update this privacy policy from time-to-time, particularly as technology changes. You can always check this page for the latest version. We may also notify you of changes to our privacy policy by email.
+
+## Any questions?
+
+If you have any questions about this privacy policy or your personal data, please write to us by email to hello@dumpark.com
