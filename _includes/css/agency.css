@@ -317,6 +317,9 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+#content {
+  color: #000000;
+}
 #content .content-item {
     right: 0;
     margin: 0 0 15px;
@@ -414,14 +417,15 @@ footer ul.quicklinks {
     font-family: {{ site.data.template.font.primary }};
     line-height: 40px;
 }
-footer ul.quicklinks a,
-footer ul.quicklinks a:hover,
-footer ul.quicklinks a:active,
-footer ul.quicklinks a:focus,
-footer ul.quicklinks a:active:focus,
-footer ul.quicklinks a:hover:active,
-footer ul.quicklinks a:hover:focus,
-footer ul.quicklinks a:hover:active:focus,
+footer a.footer-link,
+footer a.footer-link:hover,
+footer a.footer-link:active,
+footer a.footer-link.active,
+footer a.footer-link:focus,
+footer a.footer-link:active:focus,
+footer a.footer-link:hover:active,
+footer a.footer-link:hover:focus,
+footer a.footer-link:hover:active:focus,
  {
   color: #000000;
 }
