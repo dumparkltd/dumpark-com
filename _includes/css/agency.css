@@ -417,16 +417,16 @@ footer ul.quicklinks {
     font-family: {{ site.data.template.font.primary }};
     line-height: 40px;
 }
-footer a.footer-link,
-footer a.footer-link:hover,
-footer a.footer-link:active,
-footer a.footer-link.active,
-footer a.footer-link:focus,
-footer a.footer-link:active:focus,
-footer a.footer-link:hover:active,
-footer a.footer-link:hover:focus,
-footer a.footer-link:hover:active:focus,
- {
+a.footer-link,
+a.footer-link:hover,
+a.footer-link:active,
+a.footer-link.active,
+a.footer-link:focus,
+a.footer-link:active:focus,
+a.footer-link:hover:active,
+a.footer-link:hover:focus,
+a.footer-link:hover:active:focus
+{
   color: #000000;
 }
 
