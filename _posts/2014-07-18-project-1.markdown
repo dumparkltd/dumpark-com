@@ -6,7 +6,7 @@ date: 2024-01-17
 
 ---
 
-"dumpark information design" is:
+dumpark is:
 
 Woischin & Franz GbR <br>
 Harkortstr. 144 <br>

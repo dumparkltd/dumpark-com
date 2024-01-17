@@ -9,3 +9,4 @@ color:
 font:
   primary: '"Inter-Regular", "Helvetica Neue",Helvetica,Arial,sans-serif'
   secondary: '"Inter-Regular", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  bold: '"Inter-Bold", "Helvetica Neue", Helvetica,Arial,sans-serif'
