@@ -7,5 +7,5 @@ color:
 
 # Font Families
 font:
-  primary: 'Roboto, "Helvetica Neue",Helvetica,Arial,sans-serif'
-  secondary: '"Roboto", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  primary: 'Inter, "Helvetica Neue",Helvetica,Arial,sans-serif'
+  secondary: '"Inter", "Helvetica Neue", Helvetica,Arial,sans-serif'
