@@ -275,9 +275,8 @@ header .intro-text a {
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.semiBold }};
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
 }
 
 header .intro-text p {
@@ -289,8 +288,8 @@ header .intro-text p {
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.semiBold }};
-    font-size: 24px;
-    line-height: 24px;
+    line-height: 18px;
+    font-size: 18px;
 }
 
 @media(min-width:768px) {
@@ -301,8 +300,8 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-size: 22px;
-        line-height: 22px;
+        font-size: 28px;
+        line-height: 28px;
     }
 
     header .intro-text p {
@@ -311,8 +310,8 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-heading {
         margin-bottom: 25px;
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 22px;
+        line-height: 22px;
     }
 }
 
