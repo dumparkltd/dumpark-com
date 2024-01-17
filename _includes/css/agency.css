@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('./fonts/Inter-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('./fonts/Inter-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*!
  * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -6,7 +19,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Inter-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
 }
 

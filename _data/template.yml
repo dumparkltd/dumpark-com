@@ -7,5 +7,5 @@ color:
 
 # Font Families
 font:
-  primary: 'Inter, "Helvetica Neue",Helvetica,Arial,sans-serif'
-  secondary: '"Inter", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  primary: '"Inter-Regular", "Helvetica Neue",Helvetica,Arial,sans-serif'
+  secondary: '"Inter-Regular", "Helvetica Neue", Helvetica,Arial,sans-serif'
