@@ -222,6 +222,11 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 
+.container>.navbar-header {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
