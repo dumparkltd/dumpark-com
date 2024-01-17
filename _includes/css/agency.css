@@ -425,9 +425,8 @@ a.footer-link:focus,
 a.footer-link:active:focus,
 a.footer-link:hover:active,
 a.footer-link:hover:focus,
-a.footer-link:hover:active:focus
-{
-  color: #000000;
+a.footer-link:hover:active:focus {
+  color: #ffffff !important;
 }
 
 .btn:focus,
@@ -438,6 +437,7 @@ a.footer-link:hover:active:focus
 }
 
 .content-modal .modal-content {
+    color: #000000;
     padding: 100px 0;
     min-height: 100%;
     border: 0;

@@ -15,6 +15,8 @@ Germany
 
 Shareholders/directors: Edith Woischin, Timo Franz
 
+---
+
 ### Types of private information collected
 
 #### GitHub Pages
@@ -26,13 +28,19 @@ https://help.github.com/en/github/site-policy/github-privacy-statement
 
 This website does not currently collect any other private information.
 
+---
+
 ### Cookie usage
 
 This website does not use cookies.
 
+---
+
 ### Updates to this policy
 
-We may update this privacy policy from time-to-time, particularly as technology changes. You can always check this page for the latest version.
+We may update this privacy policy from time to time, particularly as technology changes. You can always check this page for the latest version.
+
+---
 
 ### Any questions?
 
