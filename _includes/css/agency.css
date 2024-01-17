@@ -66,7 +66,6 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
 }
@@ -392,13 +391,6 @@ footer {
     background: #000000;
 }
 
-footer span.copyright {
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: {{ site.data.template.font.primary }};
-    line-height: 40px;
-}
-
 footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
@@ -439,6 +431,9 @@ a.footer-link:hover:active:focus {
 .content-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
+}
+.content-modal .modal-content h4 {
+    margin-top: 25px;
 }
 
 .content-modal .modal-content p {
