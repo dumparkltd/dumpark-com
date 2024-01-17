@@ -10,6 +10,24 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('./fonts/Inter-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter-Light';
+  src: url('./fonts/Inter-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url('./fonts/Inter-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /*!
  * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
@@ -256,7 +274,7 @@ header .intro-text a {
 }
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: {{ site.data.template.font.bold }};
+    font-family: {{ site.data.template.font.semiBold }};
     line-height: 18px;
     font-size: 18px;
     font-weight: 700;
@@ -270,8 +288,7 @@ header .intro-text p {
 }
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
+    font-family: {{ site.data.template.font.semiBold }};
     font-size: 24px;
     line-height: 24px;
 }
@@ -284,7 +301,6 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: {{ site.data.template.font.bold }};
         font-size: 22px;
         line-height: 22px;
     }
@@ -295,7 +311,6 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-heading {
         margin-bottom: 25px;
-        font-family: {{ site.data.template.font.bold }};
         font-size: 28px;
         line-height: 28px;
     }
@@ -426,6 +441,11 @@ a.footer-link:hover:active:focus {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+.content-modal .modal-content h2,
+.content-modal .modal-content h3,
+.content-modal .modal-content h4 {
+  font-family: {{ site.data.template.font.semiBold }};
 }
 
 .content-modal .modal-content h2 {

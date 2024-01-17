@@ -10,3 +10,6 @@ font:
   primary: '"Inter-Regular", "Helvetica Neue",Helvetica,Arial,sans-serif'
   secondary: '"Inter-Regular", "Helvetica Neue", Helvetica,Arial,sans-serif'
   bold: '"Inter-Bold", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  semiBold: '"Inter-SemiBold", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  medium: '"Inter-Medium", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  light: '"Inter-Light", "Helvetica Neue", Helvetica,Arial,sans-serif'
