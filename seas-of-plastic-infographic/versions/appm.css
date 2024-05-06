@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'neusa_extraboldregular';
+    src: url('../xproj/assets/fonts/Neusa-ExtraBold-webfont.eot');
+    src: url('../xproj/assets/fonts/Neusa-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../xproj/assets/fonts/Neusa-ExtraBold-webfont.woff') format('woff'),
+         url('../xproj/assets/fonts/Neusa-ExtraBold-webfont.ttf') format('truetype'),
+         url('../xproj/assets/fonts/Neusa-ExtraBold-webfont.svg#neusa_extraboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'neusa_boldregular';
+    src: url('../xproj/assets/fonts/Neusa-Bold-webfont.eot');
+    src: url('../xproj/assets/fonts/Neusa-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../xproj/assets/fonts/Neusa-Bold-webfont.woff') format('woff'),
+         url('../xproj/assets/fonts/Neusa-Bold-webfont.ttf') format('truetype'),
+         url('../xproj/assets/fonts/Neusa-Bold-webfont.svg#neusa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'neusa_mediumregular';
+    src: url('../xproj/assets/fonts/Neusa-Medium-webfont.eot');
+    src: url('../xproj/assets/fonts/Neusa-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../xproj/assets/fonts/Neusa-Medium-webfont.woff') format('woff'),
+         url('../xproj/assets/fonts/Neusa-Medium-webfont.ttf') format('truetype'),
+         url('../xproj/assets/fonts/Neusa-Medium-webfont.svg#neusa_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'function_probook';
+    src: url('../xproj/assets/fonts/FunctionPro-Book-webfont.eot');
+    src: url('../xproj/assets/fonts/FunctionPro-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../xproj/assets/fonts/FunctionPro-Book-webfont.woff') format('woff'),
+         url('../xproj/assets/fonts/FunctionPro-Book-webfont.ttf') format('truetype'),
+         url('../xproj/assets/fonts/FunctionPro-Book-webfont.svg#function_probook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'function_pro_bookbold';
+    src: url('../xproj/assets/fonts/FunctionPro-Bold-webfont.eot');
+    src: url('../xproj/assets/fonts/FunctionPro-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../xproj/assets/fonts/FunctionPro-Bold-webfont.woff') format('woff'),
+         url('../xproj/assets/fonts/FunctionPro-Bold-webfont.ttf') format('truetype'),
+         url('../xproj/assets/fonts/FunctionPro-Bold-webfont.svg#function_pro_bookbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'function_promedium';
+    src: url('../xproj/assets/fonts/FunctionPro-Medium-webfont.eot');
+    src: url('../xproj/assets/fonts/FunctionPro-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../xproj/assets/fonts/FunctionPro-Medium-webfont.woff') format('woff'),
+         url('../xproj/assets/fonts/FunctionPro-Medium-webfont.ttf') format('truetype'),
+         url('../xproj/assets/fonts/FunctionPro-Medium-webfont.svg#function_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html.js .js-alert,
+html.svg .svg-alert {
+display:none;
+}
+.alert {
+    margin: 20px 0;
+    height:30px;
+    text-align:center;
+    background-color: #F2DEDE;
+    border-color: #EED3D7;
+    color: #B94A48;    
+    border-radius: 4px 4px 4px 4px;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);       
+}
+.alert a, .alert a:hover{
+    color: #B94A48;
+    font-family: 'function_pro_bookbold';    
+}
+
+body{
+	margin : 0;
+	background-color:#f6f6f2;
+	font-family: 'function_probook';
+    -moz-font-smoothing: none;
+	font-smoothing: antialiased;    
+    -webkit-font-smoothing: antialiased;    
+}
+
+h1, h2, h3, p{
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+-webkit-margin-start: 0;
+-webkit-margin-end: 0;
+padding:0;
+margin:0;
+}
+
+a, a:hover , a:active, a:visited{
+	color:#000;
+	font-family: 'function_pro_bookbold';
+}
+
+h1{font-size:4em;
+padding-top:0.4em;
+font-family: 'neusa_extraboldregular';
+line-height:0.9em;
+display:block;
+}
+
+h2{
+font-size:1.8em;
+text-transform:uppercase;
+font-family: 'neusa_extraboldregular';
+display: block;
+padding-top:5px;
+padding-bottom:5px;
+}
+
+h3{
+font-size:1.2em;
+text-transform:uppercase;
+font-family: 'neusa_extraboldregular';
+display: inline;
+}
+
+.subtitle{
+	font-size:1.1em;
+	font-family: 'function_pro_bookbold';
+}
+.maintext{
+	font-size:1.2em;
+	text-align:justify;
+	line-height:1.3em;
+}
+
+.description{
+	margin-bottom:30px;
+}
+
+.pull-left{
+float:left
+}
+.wrap-social .pull-left{
+margin-right:15px;
+}
+ 
+
+.keylabel{
+	font-family: 'neusa_mediumregular';
+	font-size:1em;
+	padding-top:3px;
+}
+
+.keylabel2{
+	font-family: 'neusa_mediumregular';
+	font-size:1em;
+	padding-top:6px;
+	line-height:1.2em;
+}
+
+.keylabel_bold{
+	font-family: 'neusa_boldregular';
+}
+
+.keyimg{
+	width:100%;
+	padding-bottom:2px;
+}
+
+.linkicon{
+	margin-right:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.papertitle{
+	font-family: 'function_pro_bookbold';
+}
+
+.iconlabel {
+	font-family: 'neusa_boldregular';
+	text-transform:uppercase;
+	text-anchor:middle;
+	pointer-events: none;
+    line-height:1.2em;
+}
+
+
+.helplabel{
+	font-size:0.8em;
+	text-transform:uppercase;
+	fill:#C4C2B7;
+	pointer-events: none;
+}
+.sankeylegend{
+	pointer-events: none;
+	font-family: 'neusa_mediumregular';
+	text-anchor:middle;
+}
+
+#map{
+	margin : 0 auto;
+	position: relative;
+}
+
+
+
+.line{
+	width:100%;
+	height:2px;
+	background-color:black;
+	margin-top:6px;
+	margin-bottom:18px;}
+	
+.boldline{
+	width:100%;
+	height:4px;
+	background-color:black;
+	margin-top:25px;
+	margin-bottom:6px;}	
+
+
+#backsphere{
+fill:#C5E3EB;
+}
+
+.plastic{
+	opacity:0.2;
+	fill:#2F6E7A;
+}
+
+.land{
+	fill:white;
+	stroke:#5A5858;
+}
+
+.current{
+	fill:white;
+	stroke:white;
+}
+
+.release{
+
+}
+
+.node rect {
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+  cursor: pointer;
+}
+
+.label text {
+  cursor:pointer;
+  font-family: 'neusa_mediumregular';
+}
+
+.node_on{
+	fill:#2F6E7A;
+}
+
+.link{
+	fill: none;
+	stroke: #000;
+	stroke-opacity: .02;
+}
+
+.selectIcon{
+	fill: #f6f6f4;
+	stroke: #c1c0bb;
+}
+.selectIcon_on{
+	fill: #dbdbd3;
+	stroke: #c1c0bb;
+}
+
+.selectMap{
+   background: url("resources/map-view-icon.svg") no-repeat scroll 0 0 transparent;
+}
+
+
+#mapicon{
+cursor:pointer;
+}
+#sankicon{
+cursor:pointer;
+}
+
+
+
+

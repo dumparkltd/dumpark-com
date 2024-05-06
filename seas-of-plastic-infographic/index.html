@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<html class="no-js" prefix="og: http://ogp.me/ns#">
+    <head>
+        <title>The Seas of Plastic Interactive - by dumpark</title>
+        <link rel="shortcut icon" href="http://dumpark.com/seas-of-plastic-infographic/favicon.png">        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta property="og:title" content="The Seas of Plastic Interactive - by dumpark" />
+        <meta property="og:description" content="Interactive Infographic - Plastic pollution in the oceans represents a major global environmental challenge. At a global scale, man-made debris has been observed to accumulate in remote areas of the ocean in large circulating gyres. " />
+        <meta property="og:type" content="non_profit" />
+        <meta property="og:url" content="http://dumpark.com/seas-of-plastic-infographic/" />
+        <meta property="og:image" content="http://dumpark.com/seas-of-plastic-infographic/resources/seasofplastic.png" />
+        <meta property="og:site_name" content="The Seas of Plastic Interactive - by dumpark" />
+        <meta property="fb:admins" content="1384433479" />		
+        <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+		<script type="text/javascript" src="http://d3js.org/topojson.v0.min.js"></script>
+		<script type="text/javascript" src="http://dumpark.com/xproj/assets/js/d3.geo.js"></script>
+		<script type="text/javascript" src="http://dumpark.com/xproj/assets/js/jquery.js"></script>
+		<script type="text/javascript" src="http://dumpark.com/xproj/assets/js/jquery.throttledresize.js"></script>
+		<script type="text/javascript" src="sankey_dp.js"></script>
+		<script type="text/javascript" src="appm.js"></script>
+        <script type="text/javascript" src="modernizr.custom.03621.js"></script>        
+		<link rel="stylesheet" href="http://dumpark.com/xproj/assets/css/bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="appp.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#191919",
+      "text": "#F6F6F2"
+    },
+    "button": {
+      "background": "#F6EC1F",
+      "text": "#191919"
+    }
+  },
+  "theme": "edgeless",
+  "content": {
+    "href": "http://dumpark.com/legal/privacy2.html"
+  }
+})});
+  </script>
+    </head>
+	
+    <body>
+        <!--[if lt IE 9]><div class="container"><div class="alert">Your browser is outdated! <a href="http://browsehappy.com/">Update your browser</a> to experience this site.</div></div><![endif]-->    
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=254421871343398";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="container">
+            <div class="alert svg-alert">We are sorry, your browser does not support SVG (Scalable Vector Graphics)! <a href="http://browsehappy.com/">Update your browser</a> to experience this site.</div>  
+            <div class="alert js-alert">Please enable JavaScript to experience this site.</div>          
+            <div class="main row-fluid">
+                <div class="content span2">
+                    <h1>THE SEAS OF PLASTIC</h1>
+                    <div class="boldline"></div>
+                    <p id="subtitle_map" class="subtitle" >Accumulation of marine floating debris originated from highly populated coastal regions</h2>
+                    <p id="subtitle_sankey" class="subtitle" >From land to sea, contribution of coastal regions to the 5 gyres and other accumulation zones</h2>
+                    <div class="line"></div>
+                    <div class="hidden-phone">
+                        <p class="description intro_map">Plastic pollution in the oceans represents a major global environmental challenge. At a global scale, man-made debris has been observed to accumulate in remote areas of the ocean in large circulating gyres. The source of this plastic is assumed to be mostly land based, however little is known about the relative contribution of different land based sources to each gyre.</p>
+                        <p class="description intro_sankey">By modelling and tracking the paths of plastic particles from land to sea we can estimate the relative sizes of each gyre. Also the model reveals the relative contributions of the different source regions to each of the gyres. These relationships are visualised here and allow to compare the contribtutions by source and gyre.</p>
+                        <p class="views">
+                            Switch to<br/>
+                            <a class="switch-map" href="#" style="display:none;">Map View</a>
+                            <a class="switch-source" href="#">Source View</a>
+                        </p>
+                        <div class="key">
+                            <div class="boldline"></div>
+                            <h3>KEY</h3>
+                            <div class="line"></div>
+                            <p class="keylabel">Coastal Population Pressure</p>
+                            <img src="resources/population-pressure-key.svg" class="keyimg"> 
+                            <p class="keylabel">Plastic Particle Concentration</p>
+                            <img src="resources/plastic-pollution-key.svg" class="keyimg">
+                            <p class="keylabel2"><span class="keylabel_bold">Dimensionless particles model:</span> the releases and concentration
+                            are expressed in percentage of the global marine debris pollution.</p>
+                            <p class="keylabel3">Ocean Currents</p>
+                            <img src="resources/currents-key.svg" class="keyimg">                            
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="viz span6"> 
+                    <div id="map" style="text-align: center;"></div>
+                </div>
+                <div class="span8 hidden-desktop hidden-tablet"> 
+					<div class="line" ></div>
+                    <p class="description intro_map">Plastic pollution in the oceans represents a major global environmental challenge. At a global scale, man-made debris has been observed to accumulate in remote areas of the ocean in large circulating gyres. The source of this plastic is assumed to be mostly land based, however little is known about the relative contribution of different land based sources to each gyre.</p>
+                    <p class="description intro_sankey">By modelling and tracking the paths of plastic particles from land to sea we can estimate the relative sizes of each gyre. Also the model reveals the relative contributions of the different source regions to each of the gyres. These relationships are visualised here and allow to compare the contribtutions by source and gyre.</p>
+                    <p class="views">
+                        Switch to<br/>
+                        <a class="switch-map" href="#" style="display:none;">Map View</a>
+                        <a class="switch-source" href="#">Source View</a>
+                    </p>                        
+					<div class="key">
+						<div class="boldline"></div>
+						<h3>KEY</h3>
+						<div class="line"></div>
+						<p class="keylabel">Coastal Population Pressure</p>
+						<img src="resources/population-pressure-key.svg" class="keyimg"> 
+						<p class="keylabel">Plastic Particle Concentration</p>
+						<img src="resources/plastic-pollution-key.svg" class="keyimg">
+						<p class="keylabel2"><span class="keylabel_bold">Dimensionless particle model:</span> the releases and concentration
+						are expressed in percentage of the global marine debris pollution.</p>
+                        <p class="keylabel3">Ocean Currents</p>
+						<img src="resources/currents-key.svg" class="keyimg">
+					</div>
+                </div>
+            </div>
+            <div class="bottom1 row-fluid">
+                <div class="bottom1-sidebar span2">
+				 <div class="boldline"></div>
+                  <h2>Source</h2>
+				  <div class="line"></div>
+				  <p class="papertitle">Numerical modelling of floating debris in the world’s oceans</p>
+				<p class="keylabel">Marine Pollution Bulletin, Volume 64, Issue 3, March 2012, Pages 653-661. L.C.-M. Lebreton, S.D. Greer, J.C. Borrero</p>
+				<p></br>A global ocean circulation model is coupled to a Lagrangian particle tracking model to simulate 30 years of input, transport and accumulation of floating debris in the world's ocean. Using both terrestrial and maritime inputs, the modelling results clearly show the formation of five accumulation zones in the subtropical latitudes of the major ocean basins. </p>
+				<p><a href="http://www.sciencedirect.com/science/article/pii/S0025326X11005674" target="_blank">
+					<img src="http://dumpark.com/xproj/assets/img/leave-website-icon.svg" class="linkicon"><b>Link to full paper</b></a>
+				</p>
+                </div>
+                <div class="bottom1-main span6">
+                    <div class="boldline"></div>
+                    <h2>About this project</h2>
+                    <div class="line"></div>
+                    <p class="maintext">We used large-scale hydrodynamic models to simulate global oceanic circulation. This was used to drive 'particles' released on coastal cells in the model to observe their oceanic pathways. The hydrodynamic data used was downloaded from HYCOM databases. A global human impacts study and geolocated coastal population data were used to define the density of particles released at the coast. By looping 6 years of hindcasted daily oceanic circulation, we integrated the dispersal model for a 25-year hydrodynamic simulation. Particles were released in the model domain and tracked over the 25-year simulation.</p>
+                    <p  class="maintext"></br>The 5 oceanic gyres are clearly visible in the results and the model has been used for extensive analysis studies identifying the relative contributions of the various sources to each gyre and other marginal seas. The relative size and concentration of each clearly illustrate the dominance of the accumulation zones in the northern hemisphere, while smaller seas surrounded by densely populated areas are also shown to have a high concentration of floating debris. We also determine the relative contribution of different source regions to the total amount of material in a particular accumulation zone. This study provides a framework for describing the transport, distribution and accumulation of floating marine debris and can be continuously updated and adapted to assess scenarios reflecting changes in the production and disposal of plastic worldwide.</p>
+                </div>
+            </div>
+            <div class="bottom2 row-fluid">
+                <div class="bottom2-sidebar span2">
+                    
+                </div>
+                <div class="bottom2-main span3">
+                    <div class="boldline"></div>
+					<img src="http://dumpark.com/xproj/assets/img/cc-licence-icons.svg">
+					<div class="line"></div>
+					<p>This work is licensed under a Creative Commons Attribution - Non Commercial - NoDerivs 3.0 Unported License. This means you can please blog, link, like, share and twitter as much as you like but can't change or use the work commercially. 
+					</p>
+                    <br>
+                    <p>If you have any questions or comments or just want to say hello please
+					<a href="mailto:hello@dumpark.com"><span class="small_bold"> contact us </span></a>.
+					</p>
+                    <br> 
+					<p> To see what else we are up to, visit:</br>
+					<a href="http://dumpark.com" target="_blank"><b>dumpark.com</b></a>
+					</p>
+                </div>
+				<div class="bottom2-main span3">
+					<div class="boldline"></div>
+					<h2>Share</h2>
+					<div class="line"></div>
+					<div class="wrap-social">
+                        <div class="pull-left">
+                            <div class="fb-like" data-href="http://dumpark.com/seasofplastic-infographic/" data-send="true" data-layout="button_count" data-width="300" data-show-faces="false"></div>
+                        </div>
+                        <div class="pull-left">
+                            <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+                            <script type="IN/Share" data-url="http://dumpark.com/seas-of-plastic-infographic/" data-counter="right"></script>
+                        </div>                        
+                        <div class="pull-left">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-via="dumpark" data-hashtags="plastic, ocean, seasofplastic">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </div>
+                    </div>
+					<div style="padding-top:160px; margin-bottom:80px; width:100%; text-align:right;">
+                    <a href="http://dumpark.com" target="_blank"><img src="http://dumpark.com/xproj/assets/img/dumpark-icon.svg"></a>
+					</div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-34359697-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>        
+    </body>
+</html> 
