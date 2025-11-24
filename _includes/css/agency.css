@@ -277,6 +277,10 @@ header .intro-text a {
   color: #ffffff;
   text-decoration: underline;
 }
+header .intro-text a:hover {
+  color: #2bffbd;
+  text-decoration: underline;
+}
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.medium }};
